@@ -1,0 +1,91 @@
+# Demo Instructions for Smart Grid Energy Forecasting Project
+
+This guide explains how to demonstrate your energy consumption forecasting project effectively.
+
+---
+
+## 🎯 Objective of the Demo
+
+Show how your system:
+- Loads and preprocesses energy data
+- Analyzes trends and patterns
+- Forecasts future consumption using time series models
+- Displays results in an interactive web interface
+
+---
+
+## ✅ What to Prepare Before the Demo
+
+1. Trained model (`trained_model.pkl`) in `model/` folder
+2. Flask web app running locally or on Heroku
+3. Sample dataset (`smart_grid_energy_consumption.csv`)
+4. Jupyter Notebook with EDA and model training steps (optional but useful)
+
+---
+
+## 💻 Steps to Demonstrate Locally
+
+### 1. Start the Flask App
+
+```bash
+python app.py
+```
+
+### 2. Open the Browser
+
+Navigate to:
+```
+http://127.0.0.1:5000/
+```
+
+### 3. Walk Through the Features
+
+- Show the **forecast plot**
+- Explain **model used** (e.g., ARIMA, Prophet)
+- Point out **predicted values table**
+- Discuss key **insights** from the data
+
+---
+
+## 🌐 Online Demo (Optional)
+
+If deployed on Heroku or another platform, open the live URL:
+
+```
+https://your-app-name.herokuapp.com/
+```
+
+---
+
+## 🎥 Suggested Demo Script
+
+1. **Introduction (1 min)**:
+   - What the project is about
+   - Why energy forecasting is important
+
+2. **Data Pipeline (2 min)**:
+   - Source of data
+   - Preprocessing and cleaning steps
+
+3. **Modeling (2 min)**:
+   - Which models were used and why
+   - How the model was trained and validated
+
+4. **Web App (2 min)**:
+   - Show forecast graph and values
+   - Talk about how it can help energy companies
+
+5. **Q&A (2 min)**:
+   - Prepare to answer questions on model accuracy, future scope, and limitations
+
+---
+
+## 📌 Tips for a Successful Demo
+
+- Keep explanations simple and to the point
+- Use visuals (plots, graphs) to make your point
+- Have your code, model, and data ready beforehand
+- Practice transitions between sections
+
+---
+
