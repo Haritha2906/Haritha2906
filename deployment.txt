@@ -1,0 +1,70 @@
+# Deployment Instructions for Smart Grid Energy Forecasting Web App
+
+## Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/selvi2106/Phase3.git
+cd Phase3
+```
+
+## Step 2: Create a Virtual Environment (Optional but Recommended)
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+## Step 3: Install Required Packages
+
+```bash
+pip install -r requirements.txt
+```
+
+## Step 4: Place the Trained Model
+
+Make sure your trained model (`trained_model.pkl`) is saved in the `model/` folder.
+
+## Step 5: Run the Flask Application
+
+```bash
+python app.py
+```
+
+This will start the web app at `http://127.0.0.1:5000/`.
+
+## Step 6: Access the Web App
+
+Open a browser and go to:
+
+```
+http://127.0.0.1:5000/
+```
+
+You will see:
+- Energy consumption forecast graph
+- Table with predicted values
+
+## Optional: Deploy on a Cloud Platform
+
+## Heroku Deployment
+
+1. Install Heroku CLI
+2. Create `Procfile` with:
+```
+web: python app.py
+```
+3. Commit your files:
+```bash
+git add .
+git commit -m "initial commit"
+```
+4. Create and push to Heroku:
+```bash#
+heroku create
+git push heroku main
+```
+
+App will be available at the URL provided by Heroku.
+
+---
+
